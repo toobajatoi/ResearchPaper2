@@ -2,9 +2,9 @@
 
 **Date.** 1 October 2026
 
-**How the search was run.** Public web search. No Scopus, Web of Science, or IEEE Xplore export. No ACM Digital Library result export. Hit counts from those databases are therefore not reported. Non-scholarly pages (software-development kits, pattern blogs, and forum posts) were set aside and are not rows in the screening log.
+**How the search was run.** Three passes on the same day. The first was public web search. The second opened public ACM Digital Library and IEEE Xplore pages. No Scopus or Web of Science search. No ACM or IEEE institutional export. Hit counts for the first two passes were not retained and are not reported. Non-scholarly pages (software-development kits, pattern blogs, and forum posts) were set aside and are not rows in the screening log.
 
-**Owning-review check.** These public-web queries did not identify a scoping or systematic review that maps what an agentic interface shows before an action and what the person can still change or refuse. The check does not cover Scopus, Web of Science, IEEE Xplore, or an ACM Digital Library export. The nearest reviews are cited in the protocol as boundaries: Wang and Wang (2026) on autonomy mechanisms, and Michael and Roesner (2026) on permission-policy interfaces and enforcement.
+**Owning-review check.** The queries below did not identify a review that maps what an agentic interface shows before an action, what the person can still change or refuse, and whether the approval is bound to the action that runs. The check does not cover Scopus, Web of Science, or an ACM Digital Library export. The boundary reviews are Wang and Wang (2026) on autonomy mechanisms, Michael and Roesner (2026) on permission-policy interfaces and enforcement, and Wang, Li, and Tian (2026) on runtime approval, including how much information is shown at decision time.
 
 ## Queries
 
@@ -27,8 +27,25 @@
 
 The second pass was run on the same day. Scopus and Web of Science were not searched. ACM and IEEE were opened as public web pages, not as institutional exports. IEEE abstracts on physical-robot motion previews were set aside and are not rows in the screening log.
 
-## Scholarly records opened
+## Third pass, same day
 
-Twenty-one distinct scholarly records were opened and are listed in `review/screening-log.csv`. Thirteen were included. Eight were excluded.
+arXiv API, `http://export.arxiv.org/api/query`, `max_results` used only to list titles. The `totalResults` value is the hit count.
 
-Citation chasing was not systematic. A paper cited inside an included study was not opened unless it also appeared in these searches.
+16. `cat:cs.HC AND all:approval AND all:agent AND submittedDate:[202401010000 TO 202610022359]` — **19** results.
+17. `cat:cs.CR AND (all:approval OR all:"human-in-the-loop") AND all:agent AND submittedDate:[202401010000 TO 202610022359]` — **111** results. All 111 titles were scanned. Records were opened only when the title concerned the approval surface, a binding between approval and execution, or a review of that surface.
+18. `all:"consent integrity" OR all:"approval integrity" OR all:"stale consent" OR all:"verifiable action card" OR all:"approval laundering"` — **6** results. This set overlaps queries 16 and 17.
+
+ACM Digital Library search URL `https://dl.acm.org/action/doSearch?AllField=agent%20approval%20preview` returned a bot-check page and no result count. No ACM hit total is reported.
+
+Forward citations, Semantic Scholar, 1 October 2026:
+
+- He et al. (2025), DOI 10.1145/3706598.3713218: **91** citing works. The first 50 titles were scanned. Titles 51–91 were not opened.
+- Weng (2026), arXiv:2606.02668: request returned HTTP 429. Count not obtained.
+- Mozannar et al. (2025), arXiv:2507.22358: request returned HTTP 429. Count not obtained.
+- Google Scholar citing pages were not retrieved.
+
+A follow-up lookup while identifying Zhang (2026) also opened arXiv:2609.31301 (H. Zhang et al.). It was not in the counted arXiv result lists above.
+
+## Records assessed
+
+Thirty-two distinct scholarly records are listed in `review/screening-log.csv`. Fifteen were included. Seventeen were excluded. Twenty-one of the thirty-two were assessed in full text in the first two passes. The eleven third-pass records were assessed at abstract, and in full HTML where an HTML version was available. The Zhang (2026) full text was not retrieved. The ICML workshop page supplied that abstract.

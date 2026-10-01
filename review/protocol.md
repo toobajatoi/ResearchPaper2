@@ -2,11 +2,11 @@
 
 **Title.** Before It Acts: A Scoping Review of Preview and Approval in Agentic AI Interfaces
 
-**Author.** Tooba Jatoi, Independent researcher, toobajatoi44@gmail.com, ORCID 0009-0008-9650-7290
+**Author.** Tooba Jatoi, Independent researcher, Karachi, Pakistan, toobajatoi44@gmail.com, ORCID 0009-0008-9650-7290
 
 **Date.** 1 October 2026
 
-**Reporting guide.** Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR).
+**Reporting guide.** Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR; Tricco et al., 2018, https://doi.org/10.7326/M18-0850). The completed checklist is `review/prisma-scr-checklist.md`.
 
 ## Question
 
@@ -20,10 +20,11 @@ When a generative AI system is about to send, edit, book, delete, or otherwise c
 
 - It is not a review of user autonomy in conversation with language models. Wang and Wang (2026) already scoping-reviewed that literature.
 - It is not a survey of how agent permission policies are specified and enforced. Michael and Roesner (2026) already surveyed that literature.
+- It is not a systematic analysis of runtime-approval security mechanisms. Wang, Li, and Tian (2026) already coded that design space, including how much information is shown at decision time. This review adds approval integrity and what the person can still edit.
 - It is not a rerun of any experiment in the included set.
 - Industry pattern guides, software-development-kit pages, and forum posts are not evidence.
 
-If a paper already owned the question of what the preview shows and what the person can still change, this review would stop. Public-web searches on 1 October 2026 did not identify a review that maps this preview. That statement is limited to those searches. Michael and Roesner (2026) own the adjacent question of permission-policy interfaces and enforcement. They are cited as a boundary and are not extracted as an interface case.
+If a paper already owned the question of what the preview shows, what the person can still change, and whether the approval is bound to the action that runs, this review would stop. The searches on 1 October 2026 did not identify that review. That statement is limited to those searches. The three papers above are boundaries. They are not extracted as interface cases.
 
 ## Eligibility
 
@@ -33,11 +34,11 @@ If a paper already owned the question of what the preview shows and what the per
 
 ## Sources and search
 
-Searches were run on 1 October 2026 through public web search. Institutional access to Scopus, Web of Science, and IEEE Xplore was not available, and the ACM Digital Library was not queried through its own export. The manuscript states this limit. The queries and the scholarly records opened from them are listed in `review/search-log.md`.
+Searches were run on 1 October 2026. The first two passes used public web search and public ACM and IEEE pages. Scopus and Web of Science were not searched, and there was no institutional export. The third pass queried the arXiv API for `cs.HC` and `cs.CR` and recorded `totalResults`. A direct ACM Digital Library search returned a bot check and no hit count. Forward-citation chasing retrieved a partial Semantic Scholar list for He et al. (2025) only. The queries are in `review/search-log.md`.
 
 ## Screening and extraction
 
-One reviewer screened titles and abstracts, then the opened full text. There was no second screener. Exclusions are in `review/screening-log.csv`.
+The author screened and extracted all records. A generative model proposed searches, screening decisions, and extraction cells. The manuscript’s Generative AI disclosure states how far those proposals were checked. There was no second human screener. Exclusions are in `review/screening-log.csv`.
 
 Each included paper is one row in `review/extraction.csv`, with these columns:
 

@@ -4,7 +4,7 @@
 
 **How the search was run.** Three passes on the same day. The first was public web search. The second opened public ACM Digital Library and IEEE Xplore pages. No Scopus or Web of Science search. No ACM or IEEE institutional export. Hit counts for the first two passes were not retained and are not reported. Non-scholarly pages (software-development kits, pattern blogs, and forum posts) were set aside and are not rows in the screening log.
 
-**Owning-review check.** The queries below did not identify a review that maps what an agentic interface shows before an action, what the person can still change or refuse, and whether the approval is bound to the action that runs. The check does not cover Scopus, Web of Science, or an ACM Digital Library export. The boundary reviews are Wang and Wang (2026) on autonomy mechanisms, Michael and Roesner (2026) on permission-policy interfaces and enforcement, and Wang, Li, and Tian (2026) on runtime approval, including how much information is shown at decision time.
+**Owning-review check.** The queries below did not identify a review that maps what an agentic interface shows before an action, what the person can still change or refuse, and whether the approval is bound to the action that runs. The check does not cover Scopus, Web of Science, or an ACM Digital Library export. The boundary reviews are Y. Wang and G. Wang (2026) on autonomy mechanisms, Michael and Roesner (2026) on permission-policy interfaces and enforcement, and P. Wang, Li, and Tian (2026) on runtime approval, including how much information is shown at decision time.
 
 ## Queries
 
@@ -44,8 +44,8 @@ Forward citations, Semantic Scholar, 1 October 2026:
 - Mozannar et al. (2025), arXiv:2507.22358: request returned HTTP 429. Count not obtained.
 - Google Scholar citing pages were not retrieved.
 
-A follow-up lookup while identifying Zhang (2026) also opened arXiv:2609.31301 (H. Zhang et al.). It was not in the counted arXiv result lists above.
+A follow-up lookup while identifying Q. Zhang (2026) also opened arXiv:2609.31301 (H. Zhang et al.). It was not in the counted arXiv result lists above.
 
 ## Records assessed
 
-Thirty-two distinct scholarly records are listed in `review/screening-log.csv`. Fifteen were included. Seventeen were excluded. Twenty-one of the thirty-two were assessed in full text in the first two passes. The eleven third-pass records were assessed at abstract, and in full HTML where an HTML version was available. The Zhang (2026) full text was not retrieved. The ICML workshop page supplied that abstract.
+Thirty-two distinct scholarly records are listed in `review/screening-log.csv`. Fifteen were included. Seventeen were excluded. Twenty-one of the thirty-two were assessed in full text in the first two passes. The eleven third-pass records were assessed at abstract, and in full HTML where an HTML version was available. The Q. Zhang (2026) full text was not retrieved. The OpenReview PDF returned HTTP 403, and the ICML workshop page supplied that abstract. The approval-binding security literature is a snapshot as of 1 October 2026.

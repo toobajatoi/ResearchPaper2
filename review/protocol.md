@@ -18,9 +18,9 @@ When a generative AI system is about to send, edit, book, delete, or otherwise c
 
 ## What this review is not
 
-- It is not a review of user autonomy in conversation with language models. Wang and Wang (2026) already scoping-reviewed that literature.
+- It is not a review of user autonomy in conversation with language models. Y. Wang and G. Wang (2026) already scoping-reviewed that literature.
 - It is not a survey of how agent permission policies are specified and enforced. Michael and Roesner (2026) already surveyed that literature.
-- It is not a systematic analysis of runtime-approval security mechanisms. Wang, Li, and Tian (2026) already coded that design space, including how much information is shown at decision time. This review adds approval integrity and what the person can still edit.
+- It is not a systematic analysis of runtime-approval security mechanisms. P. Wang, Li, and Tian (2026) already coded that design space, including how much information is shown at decision time. This review adds a chart of what the person can still edit, refuse, or undo, and whether the approval is bound to the executed action. Security work has already named that binding property.
 - It is not a rerun of any experiment in the included set.
 - Industry pattern guides, software-development-kit pages, and forum posts are not evidence.
 

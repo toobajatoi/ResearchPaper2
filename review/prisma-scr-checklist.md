@@ -21,7 +21,7 @@ The journal requires an unstructured abstract of at most 150 words, so item 2 is
 | 11 | Data items. | Section 3.3. A cell is “not reported” when the source does not say. |
 | 12 | Critical appraisal, if done. | Not done. |
 | 13 | Synthesis methods. | Section 3.3. No statistics were pooled. |
-| 14 | Numbers screened, assessed, included, and excluded, ideally with a flow diagram. | Table 1. Hit totals from the first two passes were not retained and are not invented. The third-pass arXiv totals are recorded. Table 1 is a table, not a drawn diagram. |
+| 14 | Numbers screened, assessed, included, and excluded, ideally with a flow diagram. | Table 1. Hit totals from the first two passes were not retained and are not invented. The third-pass arXiv totals and the fourth-pass OpenAlex totals are recorded. Table 1 is a table, not a drawn diagram. |
 | 15 | Characteristics of each included source. | Table 3. |
 | 16 | Critical appraisal results, if done. | Not applicable. Item 12 was not done. |
 | 17 | Charted data for each included source. | Sections 4.1–4.5 and `review/extraction.csv`. |

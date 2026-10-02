@@ -34,7 +34,7 @@ If a paper already owned the question of what the preview shows, what the person
 
 ## Sources and search
 
-Searches were run on 1 October 2026. The first two passes used public web search and public ACM and IEEE pages. Scopus and Web of Science were not searched, and there was no institutional export. The third pass queried the arXiv API for `cs.HC` and `cs.CR` and recorded `totalResults`. A direct ACM Digital Library search returned a bot check and no hit count. Forward-citation chasing retrieved a partial Semantic Scholar list for He et al. (2025) only. The queries are in `review/search-log.md`.
+Searches were run on 1 October 2026. The first two passes used public web search and public ACM and IEEE pages. Scopus and Web of Science were not searched, and there was no institutional export. The third pass queried the arXiv API for `cs.HC` and `cs.CR` and recorded `totalResults`. A direct ACM Digital Library search returned a bot check and no hit count. Forward-citation chasing retrieved a partial Semantic Scholar list for He et al. (2025) only. The fourth pass queried the OpenAlex API, retrieved every title for six queries, and recorded the counts. The queries are in `review/search-log.md`.
 
 ## Screening and extraction
 

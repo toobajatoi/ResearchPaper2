@@ -48,4 +48,19 @@ A follow-up lookup while identifying Q. Zhang (2026) also opened arXiv:2609.3130
 
 ## Records assessed
 
-Thirty-two distinct scholarly records are listed in `review/screening-log.csv`. Fifteen were included. Seventeen were excluded. Twenty-one of the thirty-two were assessed in full text in the first two passes. The eleven third-pass records were assessed at abstract, and in full HTML where an HTML version was available. The Q. Zhang (2026) full text was not retrieved. The OpenReview PDF returned HTTP 403, and the ICML workshop page supplied that abstract. The approval-binding security literature is a snapshot as of 1 October 2026.
+## Fourth pass, same day
+
+OpenAlex API, `https://api.openalex.org/works`, filtered to publications from 2024-01-01 through 2026-10-01 except where noted. Every returned title was retrieved. The title list is `review/fourth-pass-titles.tsv`. Software releases, datasets, and duplicate deposit versions were set aside and are not rows in the screening log.
+
+19. `title_and_abstract.search:approval preview agent` — **47** works.
+20. `title_and_abstract.search:consent integrity agent` — **190** works.
+21. `title_and_abstract.search:stale consent` — **47** works.
+22. `title_and_abstract.search:verifiable action card` — **27** works.
+23. `title_and_abstract.search:action guard agent` — **437** works.
+24. `title.search:from approval to execution` — **5** works. This query was not date-filtered. Two records from 2006 and 2007 were about nondestructive testing and a technical execution plan, and they were set aside.
+
+A record was assessed when the title concerned a human approval surface, a binding between an approval and the executed action, or a review of that surface, or when the title named a guard that might show a person a pending action. Automated guard-model papers whose titles did not indicate a person-facing preview were not assessed. Scopus and Web of Science were still not searched.
+
+## Records assessed
+
+Fifty-nine distinct scholarly records are listed in `review/screening-log.csv`. Fifteen were included. Forty-four were excluded. Twenty-one of the first thirty-two were assessed in full text in the first two passes. The eleven third-pass records were assessed at abstract, and in full HTML where an HTML version was available. The twenty-seven fourth-pass records were assessed at abstract. J. Liu et al. (2026) was also read in HTML. The Q. Zhang (2026) workshop PDF was read on 2 October 2026. An earlier abstract on the workshop web page reported 1,377 proposals and a 7.8 percent unsafe rate. The extraction uses the PDF. The approval-binding cluster is a snapshot as of 1 October 2026, after this OpenAlex pass.

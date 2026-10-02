@@ -6,7 +6,7 @@ toobajatoi44@gmail.com
 ORCID: 0009-0008-9650-7290  
 Corresponding author  
 
-Word count: 8,134 words from the introduction through the conclusion, including the tables and excluding the references and declarations.
+Word count: 9,045 words from the introduction through the conclusion, including the tables and excluding the references and declarations.
 
 ## Abstract
 
@@ -58,7 +58,9 @@ Searches were run on 1 October 2026 in three passes. The first pass used open we
 
 The third pass recorded database counts where the source returned them. The arXiv API was queried for `cs.HC` and for `cs.CR`, plus a phrase query for consent integrity, approval integrity, stale consent, the verifiable action card, and approval laundering. The queries and the `totalResults` values are in the search log: 19, 111, and 6. The phrase query overlaps the category queries. Titles from the `cs.CR` list were scanned. Records whose titles concerned the approval surface, a binding between approval and execution, or a review of that surface were opened. A direct search of the ACM Digital Library was attempted the same day. The site returned a bot check and no result count, so no ACM hit total is reported. Forward-citation chasing used Semantic Scholar for He et al. (2025), which listed 91 citing works. The first 50 titles were scanned, and the remaining 41 were not opened. The same request for Weng (2026) and for Mozannar et al. (2025) returned HTTP 429, and Google Scholar citing lists were not retrieved. That chase is therefore incomplete.
 
-The third pass assessed eleven further records, at abstract, and in full HTML where an HTML version was available. Nine were excluded. Two were included: Irshad et al. (2026) and Q. Zhang (2026). Across both assessments, thirty-two records were assessed and seventeen were excluded. Fifteen were included. Table 1 is the flow. Table 2 gives each exclusion reason. The Q. Zhang (2026) full text was not retrieved: the OpenReview PDF and API returned HTTP 403. The ICML workshop page supplied the abstract used for that inclusion, and extraction cells the abstract does not state are marked not reported.
+The third pass assessed eleven further records, at abstract, and in full HTML where an HTML version was available. Nine were excluded. Two were included: Irshad et al. (2026) and Q. Zhang (2026). The Q. Zhang (2026) workshop PDF was read on 2 October 2026. An earlier abstract on the workshop web page reported different counts. The figures below are from the PDF.
+
+The fourth pass queried OpenAlex on the same day. Six queries returned 47, 190, 47, 27, 437, and 5 works. Every title was retrieved and scanned. Software releases, datasets, and duplicate deposit versions were set aside and were not counted. Twenty-seven further scholarly records were assessed at abstract. J. Liu et al. (2026) was also read in HTML. All twenty-seven were excluded. None described a preview a person could inspect. Across the assessments, fifty-nine records were assessed and forty-four were excluded. Fifteen were included. Table 1 is the flow. Table 2 gives each exclusion reason.
 
 These searches did not identify a review that maps this preview and what the person can still edit. That sentence describes the queries that were run. It does not claim that no such review exists in Scopus, Web of Science, or an ACM Digital Library export. P. Wang, Li, and Tian (2026) are the nearest review of what a runtime-approval prompt shows, and they are cited as a boundary rather than as that missing map. Michael and Roesner (2026) own the neighboring survey of permission policies.
 
@@ -71,7 +73,7 @@ These searches did not identify a review that maps this preview and what the per
 | Robot-motion abstracts set aside | Not counted | IEEE pages on physical-robot previews, excluded before full text. |
 | Duplicate titles removed | Not counted | Only the count after collapse was retained. |
 | Records assessed in full text, first two passes | 21 | Sixteen from the first pass and five from the second. |
-| Excluded from that assessment | 8 | The first eight rows of Table 2. |
+| Excluded from that assessment | 8 | Rows 1–8 of Table 2. |
 | Included from that assessment | 13 | |
 | arXiv `cs.HC` query, third pass | 19 | API `totalResults`. Titles were not all assessed in full text. |
 | arXiv `cs.CR` query, third pass | 111 | API `totalResults`. Titles were scanned. |
@@ -80,8 +82,12 @@ These searches did not identify a review that maps this preview and what the per
 | Citing works of He et al. (2025) | 91 | Semantic Scholar. The first 50 titles were scanned. |
 | Citing works of Weng (2026) and Mozannar et al. (2025) | Not obtained | Semantic Scholar returned HTTP 429. Google Scholar lists were not retrieved. |
 | Additional records assessed, third pass | 11 | Abstract, plus full HTML where it was available. |
-| Excluded from that assessment | 9 | The remaining rows of Table 2. |
+| Excluded from that assessment | 9 | Rows 9–17 of Table 2. |
 | Included from that assessment | 2 | Irshad et al. (2026); Q. Zhang (2026). |
+| OpenAlex queries, fourth pass | 47; 190; 47; 27; 437; 5 | Every title was scanned. The queries are in the search log. Software releases and datasets were set aside. |
+| Additional records assessed, fourth pass | 27 | Abstract. J. Liu et al. (2026) was also read in HTML. |
+| Excluded from that assessment | 27 | Rows 18–44 of Table 2. |
+| Included from that assessment | 0 | |
 | Included in the extraction | 15 | Table 3. |
 
 **Table 2. Records excluded after assessment.**
@@ -105,14 +111,41 @@ These searches did not identify a review that maps this preview and what the per
 | Y. Wang (2026) | Systematises six ways a coding-agent harness can execute a different action from the one that was approved. Cited with the integrity finding. It is not one preview. |
 | Kumar (2026) | Names two attacks in which the approved operation and the executed operation differ. Cited with the integrity finding. It does not specify an editable preview. |
 | J. Zhang et al. (2026) | Shows that an approval record can name a command while the workflow it launches has further effects. Cited with the integrity finding. The integration does not describe what the person can edit. |
+| Z. Wang (2026a) | Defines a canonical action identity for approval binding. It does not describe a preview a person sees. |
+| Z. Wang (2026b) | Describes approval as a certificate checkpoint. It does not describe the approval screen. |
+| Zhu et al. (2026) | Shows that the action presented for approval can be reconstructed before execution. Cited with the integrity finding. It is not one preview. |
+| Saleme (2026) | Compares whether three protocol records bind approval to execution. It does not describe a preview. |
+| Kollia (2026) | Revalidates whether a recorded approval is still the current authority. It does not describe the approval screen. |
+| Yuan et al. (2026) | Can hold a high-risk tool call for human approval. It does not describe what that approval shows. |
+| Qin et al. (2026) | Enforces action-time authorization in the runtime. It does not describe a person-facing preview. |
+| Turan (2026) | Models which actions to escalate to a fatiguing reviewer. It does not describe the approval screen. |
+| S. Kang et al. (2026b) | Verifies policy steps for an agent. It does not describe a pending-action preview. |
+| S. Kang et al. (2026a) | Mentions user confirmation as a policy requirement. It does not describe the confirmation screen. |
+| J. Liu et al. (2026) | Compares permission architectures in three coding agents. It does not extract what a pending-action preview shows. |
+| Kadaboina (2026) | A consent protocol between agents. It is not a screen a person sees. |
+| Qu et al. (2026) | Measures actions beyond the requested scope. It names an ask-to-continue framework and does not describe that screen. |
+| X. Yang et al. (2026) | Routes an action to allow, replan, or confirmation. It does not describe the confirmation screen. |
+| Y. Zhang et al. (2026) | Benchmarks automated guardrails that over-refuse. It is not a person-facing preview. |
+| Salfeld-Nebgen (2026) | Requires attested evidence before execution. It does not describe a preview. |
+| Medda and Gong (2026) | Architecture for care workflows with a human hand-off. It does not describe an approval screen. |
+| Katkar et al. (2026) | Cryptographic gate on tool calls. It does not describe a person-facing preview. |
+| D. Z. Liu (2026) | Benchmark of consent constraints for personal agents. It does not describe an approval screen. |
+| Sharma (2026) | Runtime validation of telecom decisions. It does not describe a person-facing preview. |
+| Mou et al. (2026) | Automated step-level guardrail before tool execution. It does not describe a person-facing preview. |
+| Y. Feng et al. (2026a) | Guard model under user-defined policies. It does not describe an approval screen. |
+| Xiang et al. (2024) | Guard agent that checks actions against safety requests. It does not describe a person-facing preview. |
+| Y. Feng et al. (2026b) | Guard model for computer-use trajectories. It does not describe an approval screen. |
+| Agarwal et al. (2026) | Trains the agent to act or refuse. The refusal is the model’s, not a person’s preview. |
+| Zhijie Zheng et al. (2026) | Step-level guard model before tool execution. It does not describe a person-facing preview. |
+| Zihao Zheng et al. (2026) | Compares commit-time guards under state races. Cited with the integrity finding. It does not describe a preview a person sees. |
 
 ### 3.3. Extraction
 
-Each included paper is one row. The columns are the proposed action, what is shown, what can be edited, the refuse path, reversibility, and whether approval is tied to the action that runs. A cell is “not reported” when the paper does not say. No statistic was recomputed. The design propositions in Section 5 were written from this sheet.
+Each included paper is one row. The columns are the proposed action, what is shown, what can be edited, the refuse path, reversibility, and whether approval is tied to the action that runs. The author extracted every row. A cell is “not reported” when the paper does not say. No statistic was recomputed. The design propositions in Section 5 were written from this sheet.
 
 ### 3.4. Corpus
 
-Table 3 summarizes the fifteen papers. Seven are journal or conference papers. One, Q. Zhang (2026), is a paper in The Second Workshop on Agents in the Wild: Safety, Security, and Beyond. The OpenReview PDF returned HTTP 403, so that inclusion uses the workshop abstract. Seven are preprints: Mozannar et al. (2025), Long et al. (2025), Zhuang et al. (2026), Yan (2026), Weng (2026), Pochampally et al. (2026), and Irshad et al. (2026). A secondary index lists Zhuang et al. as accepted to a 2026 demonstration track; that proceedings record was not verified, so the paper is cited from its preprint.
+Table 3 summarizes the fifteen papers. Seven are journal or conference papers. One, Q. Zhang (2026), is a paper in The Second Workshop on Agents in the Wild: Safety, Security, and Beyond. The workshop PDF was read on 2 October 2026. Seven are preprints: Mozannar et al. (2025), Long et al. (2025), Zhuang et al. (2026), Yan (2026), Weng (2026), Pochampally et al. (2026), and Irshad et al. (2026). A secondary index lists Zhuang et al. as accepted to a 2026 demonstration track; that proceedings record was not verified, so the paper is cited from its preprint.
 
 **Table 3. Included studies.**
 
@@ -132,7 +165,7 @@ Table 3 summarizes the fifteen papers. Seven are journal or conference papers. O
 | Lehmann et al. (2026) | CHI 2026 | Side-by-side preview before a document change is approved | 30 people; 14 teams |
 | Kretzer et al. (2025) | CHI 2025 | Component recommendation previewed before it is drawn into a design file | Interface description |
 | Irshad et al. (2026) | Preprint | Browser card rebuilt from the pending action and checked again at dispatch | No user study; 24 scenarios |
-| Q. Zhang (2026) | ICML 2026 workshop | Approval of the resolved effect, rechecked before execution | No user study; 1,377 proposals |
+| Q. Zhang (2026) | ICML 2026 workshop | Approval of the resolved effect, rechecked before execution | No user study; 1,500 proposals |
 
 ## 4. Results
 
@@ -146,7 +179,7 @@ The fifteen interfaces do not show the same object. Reading across the extractio
 | --- | --- | --- | --- |
 | Plan | The intended sequence of steps | Edit, add, delete, split, or assign a step to the person or the agent | He et al. (2025); Feng et al. (2026); plan editors in Mozannar et al. (2025) and Long et al. (2025) |
 | Highlight | The target of the next web action | Reject or pause. Silence runs the action within five seconds | Huq et al. (2025) |
-| Description | The action in prose, or the resolved effect of a dry run | Allow or deny, or a standing allow, ask, or never rule. Q. Zhang (2026) obtains approval of the resolved effect. The abstract does not describe editing that effect | Yan (2026). Weng (2026) describes agent-written summaries of commands, a fragile case of this form. Q. Zhang (2026) |
+| Description | The action in prose, or the resolved effect of a dry run | Allow or deny, or a standing allow, ask, or never rule. Q. Zhang (2026) obtains approval of the resolved effect. The paper does not describe editing that effect | Yan (2026). Weng (2026) describes agent-written summaries of commands, a fragile case of this form. Q. Zhang (2026) |
 | Draft | The content that would be sent or inserted | Edit, regenerate, compare side by side, or withhold the commit | Long et al. (2025); Zhuang et al. (2026), for email; Lehmann et al. (2026); Kretzer et al. (2025) preview components before drawing them into a file |
 | Diff | The exact command and file change | Approve a hunk, annotate a line, or request a partial rewrite | Zhuang et al. (2026), for code |
 | Risk card | Source, sensitivity, permission, and consequence, or the true verb, recipient, amount, and provenance | Safer-alternative controls in Su et al. (2026). Deny is the prominent control in Irshad et al. (2026). Neither paper reports that a person rewrites the call | Su et al. (2026); Irshad et al. (2026) |
@@ -159,7 +192,7 @@ Pochampally et al. (2026) are one case in which the relevant object was missing.
 
 Weng (2026) describes a further gap inside dialogs that do appear. In the coding agents the paper characterizes, the confirmation text is written by the agent. A compromised or injected agent can therefore show a benign summary while a different command is the one that will run. The paper’s prototype renders facts taken from the command and marks a command it cannot inspect as uninspectable or high risk, rather than as safe.
 
-Irshad et al. (2026) rebuild that display for a browser. The card is rendered in the browser chrome, not in the page, from the element the executor is about to use. The paper’s example of a disguised transfer shows the verb, the recipient, the amount, a page-origin label, and an elevated-risk flag, and the prominent control is Deny. Q. Zhang (2026) moves the approved object from the tool call to the effect a dry run resolves, such as the email that would be sent or the rows that would be deleted. The workshop abstract does not specify the layout of that screen.
+Irshad et al. (2026) rebuild that display for a browser. The card is rendered in the browser chrome, not in the page, from the element the executor is about to use. The paper’s example of a disguised transfer shows the verb, the recipient, the amount, a page-origin label, and an elevated-risk flag, and the prominent control is Deny. Q. Zhang (2026) moves the approved object from the tool call to the effect a runtime preview resolves, such as the recipients, rows, or amount that would be committed. The paper does not specify the visual layout of that screen. The approval step asks the user, or a runtime policy in the user’s place, to approve the effect.
 
 The six forms are not substitutes. A plan names steps. A description names an action in words the study prepared, or in words the agent wrote. A draft or a diff shows the content that will leave the machine. A risk card adds why the call might be unsafe. A highlight shows where a click will land, and only for a few seconds. Mozannar et al. (2025) also use a yes-or-no action guard. The paper does not specify how much of the pending action that prompt displays, so the guard is treated as a control on the plan, not as a seventh form.
 
@@ -201,9 +234,9 @@ Weng (2026) names the property for coding agents and prototypes a hash. The dial
 
 Irshad et al. (2026) build on that account of consent integrity and implement a second check in an agentic browser. At approval, the card records the recipient and the amount read from the pending action. At dispatch, the outgoing request is read again, and a material difference aborts the action and raises the card again. On a 24-scenario benchmark, attack success without the card ranged from 68 percent to 100 percent across the evaluated models. With the card, attack success was 0 percent on every model, legitimate-task completion was 78 percent, and the false-block rate was 0 percent. The paper reports no user study. The check is the re-read at dispatch, not the presence of a card.
 
-Q. Zhang (2026) argues that approving the tool call is the wrong boundary. The same approved call can commit a different effect after alias expansion, query re-evaluation, default-argument resolution, a mutable pointer, or state drift. The paper calls this stale consent. EffectGuard dry-runs the risky action, asks for approval of the resolved effect, and revalidates that the effect about to be committed is still covered by that approval. Across 1,377 valid proposals, approval bound to the tool, the session, or the arguments committed an unsafe broadened effect in 7.8 percent of proposals. EffectGuard committed none, and its overblocking rate was 0.0 percent. Snapshot locking also blocked the unsafe commits and overblocked benign cases. Resolved-argument approval applied to 49.0 percent of cases. These figures are from the workshop abstract. They are not a user study, and the abstract does not describe the screen layout.
+Q. Zhang (2026) argues that approving the tool call is the wrong boundary. The same approved call can commit a different effect after alias expansion, query re-evaluation, default-argument resolution, a mutable pointer, or state drift. The paper calls this stale consent. EffectGuard previews the effect at approval time, stores the consent predicate, and revalidates the effect immediately before execution. Across 1,500 valid proposals from two models, the runs produced 574 broadened-effect exposures. A no-approval baseline committed all 574. A static effect policy committed 420. Resolved-argument approval applied to 984 proposals. Under a complete runtime preview, EffectGuard committed no unsafe effects, and its unnecessary-block rate was 0.0 percent. A field-scoped snapshot blocked 388 benign cases. In a 100-case recovery pilot, unsafe final states were 0, and the agent recovered 8 of 50 blocked tasks. In 34 of those 50, the agent declined to continue without renewed approval. These figures are from the workshop PDF. They are not a user study, and the PDF does not specify the visual layout of the screen. An earlier abstract on the workshop web page reported 1,377 proposals and a 7.8 percent unsafe rate.
 
-The same failure is named outside the extraction. Y. Wang (2026) separates six ways a coding-agent harness can substitute a different action after approval. Kumar (2026) distinguishes a misrepresented operation at approval time from a substitution after the person has seen the right one. J. Zhang et al. (2026) show a record that names the approved command while the workflow it launches writes files or uses the network. Michael and Roesner (2026) observed a commercial agent proceed under a setting that said approval was required. Together these papers sharpen the claim. A confirmation can fail because the text was written by the agent, because the page changed before dispatch, because the effect drifted after the call was approved, or because the record never named the effects the command would launch. None of those papers is a user test of whether people notice the mismatch.
+The same failure is named outside the extraction. Y. Wang (2026) separates six ways a coding-agent harness can substitute a different action after approval. Kumar (2026) distinguishes a misrepresented operation at approval time from a substitution after the person has seen the right one. J. Zhang et al. (2026) show a record that names the approved command while the workflow it launches writes files or uses the network. Z. Wang (2026a) argues that what was approved has to be a canonical action identity a later verifier can reproduce, not whichever runtime record is at hand. Zhu et al. (2026) show that the action presented for approval is often not the object ultimately consumed, because a reload, a rebinding, or a later lookup can reconstruct it before execution. Zihao Zheng et al. (2026) separate a state change that breaks a safety predicate from one that does not: freshness checks blocked 92 to 95 percent of benign races, and a predicate check blocked none. Kollia (2026) separates a recorded approval from the authority that still holds at execution. Michael and Roesner (2026) observed a commercial agent proceed under a setting that said approval was required. Together these papers sharpen the claim. A confirmation can fail because the text was written by the agent, because the page changed before dispatch, because the effect drifted after the call was approved, because the record never named the effects the command would launch, or because the approved representation was reconstructed before it ran. None of those papers is a user test of whether people notice the mismatch.
 
 ### 4.5. What the studies report about these designs
 
@@ -249,7 +282,7 @@ Warning research says a faithful dialog can still fail. Felt et al. (2015) redes
 
 ## 7. Limitations
 
-The author searched, screened, and extracted, with the model assistance disclosed below. A second reviewer could have included or excluded borderline papers differently. The first two passes were public web searches on a single day, and their hit totals were not kept. The second pass opened ACM Digital Library and IEEE Xplore pages. Those were not institutional exports. Scopus and Web of Science were not searched. The third pass recorded arXiv API totals for `cs.HC` (19) and `cs.CR` (111) and scanned titles, but it did not assess all 111 records in full text. A direct ACM Digital Library search returned a bot check and no hit count. Semantic Scholar listed 91 works citing He et al. (2025), of which the first 50 titles were scanned. Citing lists for Weng (2026) and Mozannar et al. (2025) were not retrieved. Papers indexed only in Scopus, Web of Science, or a complete ACM export can still be missing. Q. Zhang (2026) is included from the workshop abstract because the OpenReview PDF returned HTTP 403. The approval-binding security literature is expanding rapidly, and the integrity cluster in this review is a snapshot as of 1 October 2026.
+The author searched, screened, and extracted all records, with the model assistance disclosed below. A second reviewer could have included or excluded borderline papers differently. The first two passes were public web searches on a single day, and their hit totals were not kept. The second pass opened ACM Digital Library and IEEE Xplore pages. Those were not institutional exports. Scopus and Web of Science were not searched. The third pass recorded arXiv API totals for `cs.HC` (19) and `cs.CR` (111) and scanned titles, but it did not assess all 111 records in full text. A direct ACM Digital Library search returned a bot check and no hit count. Semantic Scholar listed 91 works citing He et al. (2025), of which the first 50 titles were scanned. Citing lists for Weng (2026) and Mozannar et al. (2025) were not retrieved. Papers indexed only in Scopus, Web of Science, or a complete ACM export can still be missing. The Q. Zhang (2026) workshop PDF was read on 2 October 2026, and it replaces the counts in an earlier web-page abstract. A fourth pass on 1 October searched OpenAlex and assessed 27 further records, all excluded. The approval-binding security literature is still expanding, and the integrity cluster in this review is a snapshot as of 1 October 2026.
 
 Seven of the fifteen included papers are preprints. Huq et al. (2025) and Zhuang et al. (2026) are system descriptions or demonstrations, not comparative user studies. Su et al. (2026) score traces with a proxy. Weng (2026), Irshad et al. (2026), and Q. Zhang (2026) evaluate security prototypes, not whether people notice a mismatched approval. The qualitative studies have 10 and 12 participants. Only He et al. (2025) and Yan (2026) report experimental comparisons with participants, and they compare involvement or permission regimes, not a factorial set of preview layouts. Section 5 is therefore a set of design propositions from heterogeneous reports. It is not an estimate of how often a control works, and it is not a validated design framework.
 
@@ -279,13 +312,15 @@ Tooba Jatoi: conceptualization, investigation, data curation, writing – origin
 
 ## Data availability
 
-The protocol, search log, screening log, extraction sheet, and PRISMA-ScR checklist are deposited at https://doi.org/10.5281/zenodo.23083341. No participant data were collected.
+The protocol, search log, screening log, extraction sheet, and PRISMA-ScR checklist are deposited at https://doi.org/10.5281/zenodo.23100844. No participant data were collected.
 
 ## Generative AI disclosure
 
-Grok 4.7, accessed through Cursor 3.17.8, was used on 1 October 2026 to run web searches, propose screening decisions and extraction entries, and draft text, to speed up the review. On 1 October 2026 the screening decisions and the extraction cells were checked against the retrieved source text. Full text was used for the included papers whose full text could be retrieved, including the open PDFs and HTML versions of He et al. (2025), Feng et al. (2026), Huq et al. (2025), Mozannar et al. (2025), Long et al. (2025), Zhuang et al. (2026), Yan (2026), Weng (2026), Pochampally et al. (2026), Su et al. (2026), Lehmann et al. (2026), Irshad et al. (2026), and the boundary papers P. Wang, Li, and Tian (2026). Q. Zhang (2026) was checked against the abstract on the ICML workshop page. The OpenReview PDF and the OpenReview API both returned HTTP 403, so the reported figures are those of the abstract, and cells the abstract does not state are marked not reported. S. Zhang et al. (2026) was checked against the publisher HTML of the CHI article, which states the sample of 221 posts and 21 interviews and describes double purchases without confirmation, cursor shadowing, and explicit confirmation for payments, identity, and outbound-message operations. The publisher PDF returned HTTP 403. Kretzer et al. (2025) was checked against the publisher’s article page, which describes the preview and the Draw Suggestion control; the PDF download returned HTTP 403. Reference identifiers were checked against the source pages used to cite them. The author takes full responsibility for the content. The model is not an author.
+Grok 4.7, accessed through Cursor 3.17.8, was used on 1 October 2026 to run web searches, propose screening decisions and extraction entries, and draft text, to speed up the review. On 1 October 2026 the screening decisions and the extraction cells were checked against the retrieved source text. Full text was used for the included papers whose full text could be retrieved, including the open PDFs and HTML versions of He et al. (2025), Feng et al. (2026), Huq et al. (2025), Mozannar et al. (2025), Long et al. (2025), Zhuang et al. (2026), Yan (2026), Weng (2026), Pochampally et al. (2026), Su et al. (2026), Lehmann et al. (2026), Irshad et al. (2026), and the boundary papers P. Wang, Li, and Tian (2026). Q. Zhang (2026) was checked against the workshop PDF supplied on 2 October 2026. An earlier abstract on the ICML workshop page reported 1,377 proposals and a 7.8 percent unsafe rate. The manuscript uses the PDF. The PDF does not specify the visual layout of the approval screen. S. Zhang et al. (2026) was checked against the publisher HTML of the CHI article, which states the sample of 221 posts and 21 interviews and describes double purchases without confirmation, cursor shadowing, and explicit confirmation for payments, identity, and outbound-message operations. The publisher PDF returned HTTP 403. Kretzer et al. (2025) was checked against the publisher’s article page, which describes the preview and the Draw Suggestion control; the PDF download returned HTTP 403. Reference identifiers were checked against the source pages used to cite them. The author takes full responsibility for the content. The model is not an author.
 
 ## References
+
+Agarwal, A., Siyan, G., Pandya, Y., Singh, J., Nambi, A., & Awadallah, A. (2026). *Learning when to act or refuse: Guarding agentic reasoning models for safe multi-step tool use* [Preprint]. arXiv. https://arxiv.org/abs/2603.03205
 
 Alpay, F., & Alpay, T. (2026). *Approval integrity and recovery in LLM answer publication* [Preprint]. arXiv. https://arxiv.org/abs/2609.15576
 
@@ -301,6 +336,10 @@ Felt, A. P., Ainslie, A., Reeder, R. W., Consolvo, S., Thyagaraja, S., Bettes, A
 
 Feng, K. J. K., Pu, K., Latzke, M., August, T., Siangliulue, P., Bragg, J., Weld, D. S., Zhang, A. X., & Chang, J. C. (2026). Cocoa: Co-planning and co-execution with AI agents. *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3772318.3791673
 
+Feng, Y., Ding, Y., Xie, Y., Li, Z., Lao, M., Wang, Z., & Guo, Y. (2026a). *AdaGuard: An adaptive guard model with user-defined policies* [Preprint]. arXiv. https://arxiv.org/abs/2609.34241
+
+Feng, Y., Du, X., Deng, X., Ding, Y., Wen, M., Wang, Y., Xie, Y., Zheng, B., Tan, Y., Li, Y., Wu, Y., Cao, K., Huang, W., Guo, Y., Ma, X., & Jiang, Y.-G. (2026b). *BraveGuard: From open-world threats to safer computer-use agents* [Preprint]. arXiv. https://arxiv.org/abs/2606.01166
+
 Grunde-McLaughlin, M., Mozannar, H., Murad, M., Chen, J., Amershi, S., & Fourney, A. (2026). *Overseeing agents without constant oversight: Challenges and opportunities* [Preprint]. arXiv. https://arxiv.org/abs/2602.16844
 
 He, G., Demartini, G., & Gadiraju, U. (2025). Plan-then-execute: An empirical study of user trust and team performance when using LLM agents as a daily assistant. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3706598.3713218
@@ -311,7 +350,17 @@ Huq, F., Wang, Z. Z., Xu, F. F., Ou, T., Zhou, S., Bigham, J. P., & Neubig, G. (
 
 Irshad, H., Mughees, A., Mughees, N., Mughees, A., & Soomro, I. A. (2026). *The verifiable action card: Trustworthy human-in-the-loop control for secure autonomous agents* [Preprint]. arXiv. https://arxiv.org/abs/2609.18411
 
+Kadaboina, R. K. (2026). *Anumati: Proof of adherence as a formal consent model for autonomous agent protocols* [Preprint]. arXiv. https://arxiv.org/abs/2604.16524
+
+Kang, S., Yu, T., & Hwang, S. J. (2026a). *PolicyGuard: A dialogue-grounded sub-agent verifier for policy adherence in LLM agents* [Preprint]. arXiv. https://arxiv.org/abs/2606.29225
+
+Kang, S., Yu, T., & Hwang, S. J. (2026b). *PolicyGuide: From guarding one action to guiding the whole workflow for policy-compliant LLM agents* [Preprint]. arXiv. https://arxiv.org/abs/2608.19861
+
 Kasibatla, S. R., Rothkopf, R., Peleg, H., Pierce, B. C., Lerner, S., Goldstein, H., & Polikarpova, N. (2026). *Decision-oriented programming with Aporia* [Preprint]. arXiv. https://arxiv.org/abs/2604.05203
+
+Katkar, A., Karkele, O., Mandhane, K., More, M., & Kashid, Y. (2026). *NiyamAI: An intent-bound AI agent with cryptographically verifiable guardrails using zero-knowledge proofs* [Preprint]. arXiv. https://arxiv.org/abs/2608.07167
+
+Kollia, M. (2026). *From human approval to current authority: Adaptive runtime governance at the execution boundary of AI-enabled organizational workflows* [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-10668771/v1
 
 Kretzer, F., Kolthoff, K., Bartelt, C., Ponzetto, S. P., & Maedche, A. (2025). Closing the loop between user stories and GUI prototypes: An LLM-based assistant for cross-functional integration in software development. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3706598.3713932
 
@@ -321,9 +370,17 @@ Lee, C. P., Porfirio, D., Wang, X. J., Zhao, K., & Mutlu, B. (2025). VeriPlan: I
 
 Lehmann, F., Shauchenka, K., & Buschek, D. (2026). Collaborative document editing with multiple users and AI agents. *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3772318.3790648
 
+Liu, D. Z. (2026). *SovereignPA-Bench: Evaluating user-owned personal agents under evolving intent, platform mediation, and consent constraints* [Preprint]. arXiv. https://arxiv.org/abs/2607.05363
+
+Liu, J., Zhao, X., Shang, X., & Shen, Z. (2026). *Dive into Claude Code: The design space of today’s and future AI agent systems* [Preprint]. arXiv. https://arxiv.org/abs/2604.14228
+
 Long, T., Zhang, X., Wang, S., Yu, Z., & Chilton, L. B. (2025). *DoubleAgents: Interactive simulations for alignment in agentic AI* [Preprint]. arXiv. https://arxiv.org/abs/2509.12626
 
+Medda, F., & Gong, H. (2026). *Governed AI-agent coordination for dementia care: Architecture, safety contracts, and evidence-derived workflow verification* [Preprint]. arXiv. https://arxiv.org/abs/2609.25956
+
 Michael, A. E., & Roesner, F. (2026). *How agents ask for permission: User permissions for AI agents, from interfaces to enforcement* [Preprint]. arXiv. https://arxiv.org/abs/2607.13718
+
+Mou, Y., Xue, Z., Li, L., Liu, P., Zhang, S., Ye, W., & Shao, J. (2026). *ToolSafe: Enhancing tool invocation safety of LLM-based agents via proactive step-level guardrail and feedback* [Preprint]. arXiv. https://arxiv.org/abs/2601.10156
 
 Mozannar, H., Bansal, G., Tan, C., Fourney, A., Dibia, V., Chen, J., Gerrits, J., Payne, T., Maldaner, M. K., Grunde-McLaughlin, M., Zhu, E., Bassman, G., Alber, J., Chang, P., Loynd, R., Niedtner, F., Kamar, E., Murad, M., Hosn, R., & Amershi, S. (2025). *Magentic-UI: Towards human-in-the-loop agentic systems* [Preprint]. arXiv. https://arxiv.org/abs/2507.22358
 
@@ -331,11 +388,23 @@ Parasuraman, R., Sheridan, T. B., & Wickens, C. D. (2000). A model for types and
 
 Pochampally, S., An, S., & Chen, Y. (2026). *Assistant or actor? Student trust, control, and delegation regret when using a general-purpose AI agent* [Preprint]. arXiv. https://arxiv.org/abs/2607.18257
 
+Qin, S., Zhuang, H., Zhou, Y., Han, Y., & Zhang, X. (2026). *AIRGuard: Guarding agent actions with runtime authority control* [Preprint]. arXiv. https://arxiv.org/abs/2605.28914
+
+Qu, Y., Zhang, Ying, Zhang, Yanjun, Deng, G., Li, Y., Zhang, L. Y., & Liu, Y. (2026). *Overeager coding agents: Measuring out-of-scope actions on benign tasks* [Preprint]. arXiv. https://arxiv.org/abs/2605.18583
+
+Saleme, M. K. (2026). *From approval to execution: Assurance boundaries in three agent protocols*. https://doi.org/10.5281/zenodo.22847474
+
+Salfeld-Nebgen, J. (2026). *Governing actions, not agents: Institutional attestation as a governance model for autonomous AI systems* [Preprint]. arXiv. https://arxiv.org/abs/2606.26298
+
+Sharma, R. K. (2026). *Criticality-based guard rail validation for AI agent decisions in autonomous telecom networks* [Preprint]. arXiv. https://arxiv.org/abs/2607.02210
+
 Shlomov, S., Shoham, I., Oved, A., & Ship, H. (2026). Governance by construction for generalist agents. *Proceedings of the ACM Conference on AI and Agentic Systems*. https://doi.org/10.1145/3786335.3813192
 
 Su, W., Rao, H., & Ma, E. (2026). Privacy and data-integrity risk cards for LLM agents: A UI/UX design framework for tool-approval oversight under prompt injection attacks. *International Journal of Graphic Design, 4*(1), 186–191. https://doi.org/10.51903/ijgd.v4i1.3699
 
 Tricco, A. C., Lillie, E., Zarin, W., O’Brien, K. K., Colquhoun, H., Levac, D., Moher, D., Peters, M. D. J., Horsley, T., Weeks, L., Hempel, S., Akl, E. A., Chang, C., McGowan, J., Stewart, L., Hartling, L., Aldcroft, A., Wilson, M. G., Garritty, C., Lewin, S., Godfrey, C. M., Macdonald, M. T., Langlois, E. V., Soares-Weiser, K., Moriarty, J., Clifford, T., Tunçalp, Ö., & Straus, S. E. (2018). PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation. *Annals of Internal Medicine, 169*(7), 467–473. https://doi.org/10.7326/M18-0850
+
+Turan, E. (2026). *Oversight has a capacity: Calibrating agent guards to a subjective, fatiguing human* [Preprint]. arXiv. https://arxiv.org/abs/2606.08919
 
 Wang, P., Li, Y., & Tian, Y. (2026). *Reframing LLM agent security as an agent-human interaction problem* [Preprint]. arXiv. https://arxiv.org/abs/2605.24309
 
@@ -343,11 +412,21 @@ Wang, Y. (2026). *Approval laundering: Systematizing approval–execution bindin
 
 Wang, Y., & Wang, G. (2026). User autonomy in human-LLM interaction: A scoping review. *Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3772363.3798855
 
+Wang, Z. (2026a). *CAVA: Canonical action verification and attestation for runtime governance of agentic AI systems* [Preprint]. arXiv. https://arxiv.org/abs/2607.13716
+
+Wang, Z. (2026b). *Proof-carrying agent actions: Model-agnostic runtime governance for heterogeneous agent systems* [Preprint]. arXiv. https://arxiv.org/abs/2606.04104
+
 Weng, X. (2026). *What you approve is what executes: Consent integrity for black-box LLM agents* [Preprint]. arXiv. https://arxiv.org/abs/2606.02668
+
+Xiang, Z., Zheng, L., Li, Y., Hong, J., Li, Q., Xie, H., Zhang, J., Xiong, Z., Xie, C., Yang, C., Song, D., & Li, B. (2024). *GuardAgent: Safeguard LLM agents by a guard agent via knowledge-enabled reasoning* [Preprint]. arXiv. https://arxiv.org/abs/2406.09187
 
 Xie, L., Zheng, C., Xia, H., Qu, H., & Zhu-Tian, C. (2024). WaitGPT: Monitoring and steering conversational LLM agent in data analysis with on-the-fly code visualization. *Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology*. https://doi.org/10.1145/3654777.3676374
 
 Yan, T. (2026). *Do user-authored permission policies improve protection against AI agent overreach?* [Preprint]. arXiv. https://arxiv.org/abs/2608.27443
+
+Yang, X., Miao, Z., Sui, D., Shao, J., & Li, L. (2026). *Defense-as-skill: Evolving runtime guard skill for skill-augmented agents* [Preprint]. arXiv. https://arxiv.org/abs/2609.01487
+
+Yuan, A., Su, Z., & Zhao, Y. (2026). *AEGIS: No tool call left unchecked — a pre-execution firewall and audit layer for AI agents* [Preprint]. arXiv. https://arxiv.org/abs/2603.12621
 
 Zhang, H., Zhang, H., Liang, Z., Yan, Y., Zuo, D., & Wang, H. (2026). *Beyond approved actions: Runtime validation of persistent outcomes in agent workflows* [Preprint]. arXiv. https://arxiv.org/abs/2609.31301
 
@@ -357,6 +436,14 @@ Zhang, Q. (2026). Approve the effect, not the tool call: Preventing stale consen
 
 Zhang, S., Chen, J., Gao, Z., Gao, J., Yi, X., & Li, H. (2026). Characterizing unintended consequences of GUI agents for web browsing. *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*. https://doi.org/10.1145/3772318.3790696
 
+Zhang, Y., Xie, Y., & Chen, K. (2026). *The guard that cried wolf: How scary words make agent guardrails refuse legitimate actions* [Preprint]. arXiv. https://arxiv.org/abs/2608.27009
+
+Zheng, Zhijie, Li, Y., Qian, C., Fu, Yuqian, Fu, Yanwei, Sheng, L., Shao, J., & Liu, D. (2026). *StepGuard: Learning step-level guardrails with scalable supervision and safety-utility balancing* [Preprint]. arXiv. https://arxiv.org/abs/2608.24777
+
+Zheng, Zihao, Long, J., Li, B., & Yao, J. (2026). *Stale does not mean unsafe: Guard precision for tool-using LLM agents under infrastructure state races* [Preprint]. arXiv. https://arxiv.org/abs/2609.29522
+
 Zhou, J., Roy, A., Gupta, S., Weitekamp, D., & MacLellan, C. J. (2025). *When should users check? Modeling confirmation frequency in multi-step agentic AI tasks* [Preprint]. arXiv. https://arxiv.org/abs/2510.05307
+
+Zhu, J., Liu, Z., Fan, S., Chen, J., & He, Q. (2026). *From approval to execution: Reconstruction-aware repair analysis for LLM-agent software* [Preprint]. arXiv. https://arxiv.org/abs/2609.26529
 
 Zhuang, H., Xing, H., & Zhang, X. (2026). *AgentClick: A skill-based human-in-the-loop review layer for terminal AI agents* [Preprint]. arXiv. https://arxiv.org/abs/2604.16520

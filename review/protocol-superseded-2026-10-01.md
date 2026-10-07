@@ -1,6 +1,6 @@
-# Protocol: Before It Acts
+# Protocol: Before It Acts (superseded draft)
 
-**Status.** Current protocol corresponding to the submitted manuscript. A 1 October 2026 draft with a different workflow note and different question wording is retained as `protocol-superseded-2026-10-01.md`.
+**Status.** SUPERSEDED. This file is retained as a historical draft of the 1 October 2026 protocol. It is not the protocol reported in the submitted manuscript. The current protocol is `protocol.md`.
 
 **Title.** Before It Acts: A Scoping Review of Preview and Approval in Agentic AI Interfaces
 
@@ -14,11 +14,9 @@
 
 When a generative AI system is about to send, edit, book, delete, or otherwise change something, what does the interface show the person, and what can that person still change or refuse?
 
-The questions below are those reported in the submitted manuscript. They preserve the scope of the 1 October 2026 protocol.
-
-1. What object do agentic interfaces reported in the included evidence present before an action changes state outside the conversation?
-2. For each interface, what does the source report about editing that object, refusing it, limiting its scope in advance, and undoing it after execution?
-3. Which reports bind the approved object to the object that executes, and what evidence tests whether people notice when the two diverge?
+1. What do published interfaces reveal before an agent takes an action?
+2. What can the person edit, limit, refuse, or undo at that moment?
+3. What design guidance follows from those studies for an approval screen that shows the action, its scope, and its consequence?
 
 ## What this review is not
 
@@ -42,7 +40,7 @@ Searches were run on 1 October 2026. The first two passes used public web search
 
 ## Screening and extraction
 
-All records were screened by the author against the predefined eligibility criteria. The author made the inclusion and exclusion decisions, charted the included reports, applied the analytical codes, and verified each extracted field against the corresponding source. There was no second human screener and no agreement statistic. Exclusions are in `review/screening-log.csv`.
+The author read the retrieved sources between 1 October and 7 October 2026 and separately confirmed the screening labels and the extraction cells against those sources. A generative model proposed the searches, the screening decisions, and the extraction cells. The deposited log records the confirmed decisions. No label was changed. There was no second human screener and no agreement statistic. Exclusions are in `review/screening-log.csv`.
 
 Each included paper is one row in `review/extraction.csv`, with these columns:
 
@@ -53,7 +51,7 @@ Each included paper is one row in `review/extraction.csv`, with these columns:
 - reversibility
 - whether approval is tied to that exact action
 
-A cell is marked “not reported” when the paper does not say. Design propositions are written only after this sheet exists, and only where the extracted studies support them.
+A cell is marked “not reported” when the paper does not say. Design guidance is written only after this sheet exists, and only where the extracted studies support it.
 
 ## Synthesis
 

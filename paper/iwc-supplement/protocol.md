@@ -1,14 +1,14 @@
-# Protocol: Before It Acts
+﻿# Protocol: Before It Acts
 
-**Status.** Current protocol corresponding to the submitted manuscript. A 1 October 2026 draft with a different workflow note and different question wording is retained as `protocol-superseded-2026-10-01.md`.
+**Status.** Current protocol corresponding to the submitted manuscript. A superseded 1 October 2026 draft with different question wording is retained in the review record and is not this file.
 
 **Title.** Before It Acts: A Scoping Review of Preview and Approval in Agentic AI Interfaces
 
-**Author.** Tooba Jatoi, Independent researcher, Karachi, Pakistan, toobajatoi44@gmail.com, ORCID 0009-0008-9650-7290
+**Author.** Omitted from this file for double-anonymized review. The name and affiliation are on the title page.
 
 **Date.** 1 October 2026
 
-**Reporting guide.** Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR; Tricco et al., 2018, https://doi.org/10.7326/M18-0850). The completed checklist is `review/prisma-scr-checklist.md`.
+**Reporting guide.** Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR; Tricco et al., 2018, https://doi.org/10.7326/M18-0850). The completed checklist is `prisma-scr-checklist.md`.
 
 ## Question
 
@@ -38,13 +38,13 @@ If a paper already owned the question of what the preview shows, what the person
 
 ## Sources and search
 
-Searches were run on 1 October 2026. The first two passes used public web search and public ACM and IEEE pages. Scopus and Web of Science were not searched, and there was no institutional export. The third pass queried the arXiv API for `cs.HC` and `cs.CR` and recorded `totalResults`. A direct ACM Digital Library search returned a bot check and no hit count. Forward-citation chasing retrieved a partial Semantic Scholar list for He et al. (2025) only. The fourth pass queried the OpenAlex API, retrieved every title for six queries, and recorded the counts. The queries are in `review/search-log.md`.
+Searches were run on 1 October 2026. The first two passes used public web search and public ACM and IEEE pages. Scopus and Web of Science were not searched, and there was no institutional export. The third pass queried the arXiv API for `cs.HC` and `cs.CR` and recorded `totalResults`. A direct ACM Digital Library search returned a bot check and no hit count. Forward-citation chasing retrieved a partial Semantic Scholar list for He et al. (2025) only. The fourth pass queried the OpenAlex API, retrieved every title for six queries, and recorded the counts. The queries are in `search-log.md`.
 
 ## Screening and extraction
 
-All records were screened by the author against the predefined eligibility criteria. The author made the inclusion and exclusion decisions, charted the included reports, applied the analytical codes, and verified each extracted field against the corresponding source. There was no second human screener and no agreement statistic. Exclusions are in `review/screening-log.csv`.
+All records were screened by the author against the predefined eligibility criteria. The author made the inclusion and exclusion decisions, charted the included reports, applied the analytical codes, and verified each extracted field against the corresponding source. There was no second human screener and no agreement statistic. Exclusions are in `screening-log.csv`.
 
-Each included paper is one row in `review/extraction.csv`, with these columns:
+Each included paper is one row in `extraction.csv`, with these columns:
 
 - proposed action
 - what is shown

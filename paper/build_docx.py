@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 from docx import Document
-from docx.enum.text import WD_LINE_SPACING
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -12,6 +12,7 @@ from docx.shared import Cm, Pt, RGBColor
 ROOT = Path(__file__).resolve().parent
 FONT = "Times New Roman"
 INLINE = re.compile(r"(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)")
+IMAGE = re.compile(r"^!\[(.*?)\]\((.+?)\)$")
 
 
 def set_run_font(run, size, bold=False, italic=False, mono=False):
@@ -137,6 +138,18 @@ def build(source, destination, title, author):
                     rows.append(parse_table_row(lines[index]))
                 index += 1
             add_table(document, rows)
+            continue
+        image = IMAGE.match(line.strip())
+        if image:
+            caption, relative = image.group(1), image.group(2)
+            path = (source.parent / relative).resolve()
+            block = document.add_paragraph()
+            block.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            block.paragraph_format.space_before = Pt(8)
+            block.paragraph_format.space_after = Pt(4)
+            block.add_run().add_picture(str(path), width=Cm(16.0))
+            paragraph(document, caption, size=10, after=12, before=2, center=True)
+            index += 1
             continue
         if line.startswith("### "):
             heading = document.add_heading(line[4:], level=2)
